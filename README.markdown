@@ -39,7 +39,8 @@
 在您希望创建项目的目录下（例如 `D:\workspace`），打开命令行工具，执行以下命令。请将参数替换为您自己的配置。
 
 ```bash
-mvn com.pictech:multi-module-generator:generate \
+mvn clean install;
+mvn com.pictech:multimodule-generator-maven-plugin:1.0.0:generate \
   -DgroupId=com.example.company \
   -DartifactId=my-project \
   -DdbUrl=jdbc:mysql://localhost:3306/my_database?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC \
